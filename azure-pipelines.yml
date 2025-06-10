@@ -6,10 +6,10 @@ pool:
 
 steps:
   - script : echo Hello, it's my Azure Devops App
-    displayname: 'Run an echo command'
+    displayName: 'Run an echo command'
 
   - script : mvn clean install
-    displayname: 'Build on Maven' 
+    displayName: 'Build on Maven' 
 
   - script: java -jar target/mavensecond-0.0.1-SNAPSHOT.jar
-    displayname: 'Run a jar file of my maven app'
+    displayName: 'Run a jar file of my maven app'
